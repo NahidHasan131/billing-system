@@ -1,0 +1,7 @@
+.nav-search{
+    border: none;
+    outline: none;
+}
+.nav-search:focus{
+    box-shadow: none;
+}

@@ -1,0 +1,13 @@
+.sideBar{
+    background-color: #383FE1;
+    color: rgba(255, 255, 255, 0.5);
+    position: sticky;
+    top: 0;
+}
+.sideBar ul li{
+    padding: 16px 0 16px 0;
+    cursor: pointer;
+}
+/* .invoice-sidebar{
+    background-color: #F1F5F9;
+} */

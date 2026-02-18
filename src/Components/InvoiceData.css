@@ -1,0 +1,76 @@
+.invoice-title h2{
+    color: #3B3E44;
+}
+.invoice-title p{
+    color: #84878B;
+}
+.invoice-btn{
+    background-color: #383FE1;
+    color: white;
+    margin-top: -15px;
+}
+.invoice-btn:hover{
+    border-color: #383FE1;
+    color: #383FE1;
+    opacity: 0.8;
+}
+
+.invoice-table{
+    font-size: 13px;
+
+}
+.invoice-table thead{
+    border-top: 1px solid #e5e7eb;
+}
+.invoice-table thead tr th{
+    color: #3B3E44;
+}
+.invoice-table tbody tr td{
+    border: none;
+    color: #84878B;
+}
+
+.invoice-table tbody tr td .btn-delete{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    background-color: rgba(243, 106, 106, 0.2);
+    color: #F36A6A;
+    border-radius: 6px;
+    padding: 5px 7px;
+    margin-left: 5px;
+}
+.invoice-table tbody tr td .btn-edit{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    background-color: rgba(236, 246, 254, 1);
+    color: #383FE1;
+    border-radius: 6px;
+    padding: 5px 7px;
+    margin-left: 5px;
+}
+
+.invoice-table tbody tr .unpaid{
+    background-color: rgba(243, 106, 106, 0.2);
+    color: #F36A6A;
+    border-radius: 6px;
+    padding: 5px 15px;
+    display: block;
+}
+.invoice-table tbody tr .paid{
+    background-color: rgba(66, 193, 95, 0.2);
+    color: #42C15F;
+    border-radius: 6px;
+    padding: 5px 15px;
+    display: block;
+}
+.invoice-table tbody tr .canceled{
+    background-color: rgba(23, 32, 102, 0.2);
+    color: #172066;
+    border-radius: 6px;
+    padding: 5px 15px;
+    display: block;
+}
