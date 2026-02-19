@@ -1,0 +1,13 @@
+.invoice-text{
+    color: #84878B;
+}
+.invoice-tables{
+    background-color: transparent;
+}
+.invoice-tables thead{
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+.invoice-tables tbody tr td{
+    color: #84878B;
+}

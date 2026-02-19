@@ -1,23 +1,21 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import InvoiceData from '../Components/InvoiceData';
 import AddData from '../Components/AddData';
-import ShowInvoice from '../Components/ShowInvoice';
+import ShowInvoice from './ShowInvoice';
 
 const Invoices = () => {
     const [showAddInvoice, setShowAddInvoice] = useState(false);
-    const [showInvoice, setShowInvoice] = useState(false);
+    const [showInvoicePage, setShowInvoicePage] = useState(false);
 
     return (
         <div>
-            {!showAddInvoice ? (
-                <InvoiceData setShowAddInvoice={setShowAddInvoice} ></InvoiceData>) : 
-                ( <AddData setShowAddInvoice={setShowAddInvoice} ></AddData> )
-            }
-
-            {showInvoice ? (
-                 <ShowInvoice setShowInvoice={setShowInvoice}></ShowInvoice>):null
-            }
-            
+            {showInvoicePage ? (
+                <ShowInvoice setShowInvoicePage={setShowInvoicePage}></ShowInvoice>
+            ) : !showAddInvoice ? (
+                <InvoiceData setShowAddInvoice={setShowAddInvoice}></InvoiceData>
+            ) : (
+                <AddData setShowAddInvoice={setShowAddInvoice} setShowInvoicePage={setShowInvoicePage}></AddData>
+            )}
         </div>
     );
 };

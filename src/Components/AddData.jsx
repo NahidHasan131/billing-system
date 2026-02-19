@@ -1,6 +1,6 @@
 import './AddData.css'
 
-const AddData = ({setShowAddInvoice, setShowInvoice}) => {
+const AddData = ({setShowAddInvoice, setShowInvoicePage}) => {
  
     return (
         <div className='text-start'>
@@ -124,7 +124,7 @@ const AddData = ({setShowAddInvoice, setShowInvoice}) => {
                 <div className='d-flex gap-3 mt-4'>
                     <button type="button" className='btn btn-primary rounded-pill px-4 py-2'>Save</button>
                     <button type="button" onClick={() => setShowAddInvoice(false)} className='btn btn-outline-secondary rounded-pill px-4 py-2'>Cancel</button>
-                    <button type="button" onClick={() => setShowInvoice(true)} className='btn btn-primary rounded-pill px-4 py-2'>Download Invoice</button>
+                    <button type="button" onClick={() => {setShowAddInvoice(false); setShowInvoicePage(true);}} className='btn btn-primary rounded-pill px-4 py-2'>Download Invoice</button>
                 </div>
             </div>
         </div>

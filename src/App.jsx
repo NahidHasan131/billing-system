@@ -4,7 +4,6 @@ import Sidebar from './Components/Sidebar'
 import Invoices from './Pages/Invoices'
 import Dashboard from './Pages/Dashboard'
 import Navbar from './Components/Navbar'
-import ShowInvoice from './Components/ShowInvoice'
 
 function App() {
 
@@ -20,7 +19,6 @@ function App() {
             <Route path='/' element={<Dashboard></Dashboard>}></Route>
             <Route path='/invoice' element={<Invoices></Invoices>}></Route>
           </Routes>
-          <ShowInvoice></ShowInvoice>
         </div>
       </div>
     </Router>
