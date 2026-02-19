@@ -16,4 +16,49 @@
 }
 form h4{
     font-size: 18px;
+    color: #3B3E44;
+    margin-bottom: 10px;
+}
+
+.upload-box{
+    border: 2px dashed #d1d5db !important;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.upload-box:hover{
+    border-color: #383FE1 !important;
+    background-color: #f8f9fa;
+}
+
+.product-table{
+    font-size: 14px;
+}
+.product-table thead tr th{
+    color: #3B3E44;
+    font-weight: 600;
+    border-bottom: 2px solid #e5e7eb;
+    padding: 12px 8px;
+}
+.product-table tbody tr td{
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+.product-table .form-select,
+.product-table .form-control{
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.btn-delete-product{
+    border: none;
+    outline: none;
+    background-color: rgba(243, 106, 106, 0.2);
+    color: #F36A6A;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-delete-product:hover{
+    background-color: rgba(243, 106, 106, 0.3);
 }

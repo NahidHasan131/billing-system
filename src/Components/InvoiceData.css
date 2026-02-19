@@ -17,17 +17,19 @@
 
 .invoice-table{
     font-size: 13px;
-
+    min-width: 900px;
 }
 .invoice-table thead{
     border-top: 1px solid #e5e7eb;
 }
 .invoice-table thead tr th{
     color: #3B3E44;
+    white-space: nowrap;
 }
 .invoice-table tbody tr td{
     border: none;
     color: #84878B;
+    white-space: nowrap;
 }
 
 .invoice-table tbody tr td .btn-delete{

@@ -7,7 +7,7 @@ const Sidebar = () => {
         <div className='sideBar p-4'>
             <h2 className='pb-4'>Logo</h2>
             <ul className='list-unstyled text-start ps-3'>
-                <li><i className="fa-regular fa-house"></i> Dashboard</li>
+                <li><Link to='/' style={{color: "rgba(255, 255, 255, 0.5)"}} className='text-decoration-none'><i className="fa-regular fa-house"></i> Dashboard</Link></li>
                 <li><i className="fa-solid fa-phone-volume"></i> Reservations</li>
                 <li className='d-flex justify-content-between'><span><i className="fa-solid fa-suitcase-rolling"></i> Trips</span> <span><i className="fa-solid fa-angle-down"></i></span></li>
                 <li><Link to='/invoice' style={{color: "rgba(255, 255, 255, 0.5)"}} className='text-decoration-none invoice-sidebar'><i className="fa-solid fa-file-invoice"></i> Invoices</Link></li>

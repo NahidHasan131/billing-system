@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <nav className="navbar fixed-top navbar-light bg-white shadow-sm p-4 mb-4 rounded position-sticky w-100 ">
+        <nav className="navbar navbar-light bg-white shadow-sm p-4 mb-4 rounded position-sticky top-0 w-100" style={{zIndex: 100}}>
                 <div className="container-fluid d-flex justify-content-between align-items-center">
                     <form className="d-flex me-3">
                         <div className="input-group flex-nowrap border rounded d-flex align-items-center px-4 py-2 rounded-pill">

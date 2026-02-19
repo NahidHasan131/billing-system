@@ -8,6 +8,13 @@
     padding: 16px 0 16px 0;
     cursor: pointer;
 }
+.sideBar ul li a{
+    display: block;
+    width: 100%;
+}
+.sideBar ul li a:hover{
+    color: rgba(255, 255, 255, 0.8) !important;
+}
 /* .invoice-sidebar{
     background-color: #F1F5F9;
 } */

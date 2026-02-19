@@ -1,14 +1,23 @@
-import React from 'react';
-import Avatar from '../assets/avatar.png'
-import Navbar from '../Components/Navbar';
+import React, {useState} from 'react';
 import InvoiceData from '../Components/InvoiceData';
 import AddData from '../Components/AddData';
+import ShowInvoice from '../Components/ShowInvoice';
 
 const Invoices = () => {
+    const [showAddInvoice, setShowAddInvoice] = useState(false);
+    const [showInvoice, setShowInvoice] = useState(false);
+
     return (
         <div>
-            <InvoiceData></InvoiceData>
-            <AddData></AddData>
+            {!showAddInvoice ? (
+                <InvoiceData setShowAddInvoice={setShowAddInvoice} ></InvoiceData>) : 
+                ( <AddData setShowAddInvoice={setShowAddInvoice} ></AddData> )
+            }
+
+            {showInvoice ? (
+                 <ShowInvoice setShowInvoice={setShowInvoice}></ShowInvoice>):null
+            }
+            
         </div>
     );
 };
